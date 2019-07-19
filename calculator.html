@@ -11,7 +11,6 @@ function cube(){
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 3);
 }
-
 function cuadrube(){
 	var num = document.getElementById("n4");
 	num.value = Math.pow(num.value, 4);
@@ -21,7 +20,10 @@ function sin(){
 	var num = document.getElementById("n3");
 	num.value = Math.sin(num.value);
 }
-
+function inv(){
+	var num = document.getElementById("n5");
+	num.value = 1/num.value;
+}
 </script>
 </head>
 <body>
@@ -45,6 +47,11 @@ function sin(){
 	<input type="text" id="n2">
 	<p>
 		<button onclick="square()"> x^2 </button>
+	</p>
+	Number:
+	<input type="text" id="n5">
+	<p>
+		<button onclick="inv()"> 1/x </button>
 	</p>
 </body>
 </html>
